@@ -1,17 +1,16 @@
-provider "azurerm" {
-  features {}
-}
-
 terraform {
   required_providers {
     azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "3.26.0"
+      source = "hashicorp/azurerm"
+      version = "4.3.0"
     }
   }
 }
 
-resource "azurerm_resource_group" "rg" {
-  name     = "myFirstResourceGroup"
-  location = "westeurope"
+
+resource "azurerm_ressource_group" "rg" {
+    name = "myFirstResourceGroup"
+    location = "westeurope"
+
 }
+
